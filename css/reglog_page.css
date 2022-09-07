@@ -1,0 +1,111 @@
+@font-face {
+	font-family: ROBOTO;
+	src: url(../font/roboto-regular_allfont.ttf) ;
+  }
+* {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, a, span, li,button, div, input {
+	font-family:ROBOTO;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /*width: 100vw;
+    height: 100vh;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    position: relative;
+}
+.container img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(25%);
+}
+.cover__header__logo {
+    display: flex;
+	font-size: 45px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	color: #0aaee4;
+	text-shadow: 1px 1px 2px black;
+    padding: 30px 0;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 380px;
+    margin: 14% 0;
+    z-index: 1;
+    box-shadow: 0px 0px 100px 10px black;
+}
+.card a {
+    text-decoration: none;
+}
+.card__item {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    font-size: 18px;
+    align-items: center;
+    width: 53%;
+}
+.card__item-check {
+    display: flex;
+    margin-bottom: 15px;
+    width: 58%;
+    padding-right: 11px;
+}
+.card__item-check label {
+    padding-left: 10px;
+    font-size: 16px;
+}
+.card__item-submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    font-size: 18px;
+    align-items: center;
+    width: 60%;
+    font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	background-color: #0aaee4;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 5px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	transition: 2s;
+}
+.card__item-submit:hover {
+    background-color: rgb(12, 113, 146);
+}
+@media (max-width: 530px) {
+    .container img {
+        display: none;
+    }
+    .card {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    .card__item {
+        width: 73%;
+    }
+    .card__item-check {
+        width: 78%;
+    }
+    .card__item-submit {
+        width: 80%;
+    }
+}

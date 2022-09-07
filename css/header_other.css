@@ -1,0 +1,60 @@
+.cover-other {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+    height:6em;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1020;
+	background: rgb(245,246,246);
+background: linear-gradient(90deg, rgba(245,246,246,1) 0%, rgba(245,246,240,0.9416141456582633) 17%, rgba(245,246,246,0.8883928571428571) 44%, rgba(251,251,251,0.7791491596638656) 63%, rgba(245,246,246,0.36458333333333337) 84%, rgba(245,246,246,0.21612394957983194) 92%, rgba(245,246,246,0) 99%);
+}
+.cover__header {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	top: 0;
+	padding: 0 15px 0 15px;
+    align-items: center;
+}
+.cover__header__logo {
+	display: flex;
+	font-size: 45px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	color: #0aaee4;
+	text-shadow: 1px 1px 2px black;
+}
+.cover__header__buttons {
+	display: flex;
+	align-items: center;
+	min-width: 175px;
+}
+.cover__header__buttons svg {
+	margin-left: 20px;
+	cursor: pointer;
+}
+.cover__header__buttons button {
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	background-color: #0aaee4;
+	border: none;
+	margin-left: 20px; 
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 6px 9px;
+	box-shadow: 5px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	transition: 2s;
+}
+.cover__header__buttons button:hover {
+	background-color: rgb(12, 113, 146);
+}
+.cover__header a {
+    text-decoration: none;
+}
+#personalCabinet {
+	display: none;
+}

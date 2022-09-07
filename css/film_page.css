@@ -1,0 +1,204 @@
+@font-face {
+	font-family: ROBOTO;
+	src: url(../font/roboto-regular_allfont.ttf) ;
+  }
+* {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, a, span, li,button, div {
+	font-family:ROBOTO;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f6f6;
+}
+.film {
+    display: flex;
+    width: 90%;
+    max-width: 1600px;
+    position: relative;
+    height: 775px;
+}
+.film__info {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(245,246,246);
+    background: linear-gradient(90deg, rgba(245,246,246,1) 0%, rgba(245,246,240,1) 28%, rgba(245,246,246,0.8883928571428571) 48%, rgba(251,251,251,0.7791491596638656) 63%, rgba(245,246,246,0.36458333333333337) 84%, rgba(245,246,246,0.21612394957983194) 92%, rgba(245,246,246,0) 99%);
+}
+.film__poster {
+    display: flex;
+    width: 100%;
+}
+.film__poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*object-position: 0 5%;*/
+    object-position: 100px 10%;
+
+}
+.film__info__title{ 
+    margin-bottom: 10px;
+}
+.film__info__title h2 {
+font-size: 24px;
+font-weight: 700;
+color: #0aaee4;
+}
+.film__info__title h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2bbdee;
+    }
+.film__info__data {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a3a3a3;
+}
+.film__info__data a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #a3a3a3;
+}
+.film__info__data a:hover {
+    text-decoration: underline;
+}
+.spacing {
+    margin: 0 4px;
+}
+.film__info__synopsis {
+    color: #0aaee4;
+    width: 73%;
+    margin-top: 10px;
+}
+.film__info__synopsis p{
+    color: black;
+}
+.line {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background: rgb(245,246,246);
+    background: linear-gradient(90deg, rgba(245,246,246,1) 10%, rgba(177,205,231,1) 27%, rgba(135,210,244,1) 45%, rgba(174,204,218,1) 66%, rgba(148,194,210,1) 74%, rgba(245,246,246,1) 90%);
+}
+.line__wrap {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.line__wrap button {
+    font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	background-color: #0aaee4;
+	border: none;
+	margin-left: 20px; 
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 6px 9px;
+	box-shadow: 5px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	transition: 2s;
+    display: flex;
+	align-items: center;
+	min-width: 105px;
+}
+.line__wrap button:hover {
+    background-color: rgb(12, 113, 146);
+}
+.line__wrap__logo {
+    display: flex;
+	font-size: 45px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	color: #0aaee4;
+	text-shadow: 1px 1px 2px black;
+}
+.line__wrap a{
+    text-decoration: none;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f5f6f6;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.wrapper__title {
+    color: black;
+    margin-top: 15px;
+    font-size: 30px;
+}
+.trailer {
+    padding-top: 15px;
+    display: flex;
+    width: 90%;
+    max-width: 1600px;
+}
+.trailer iframe {
+    width: 100%;
+    height: 700px;
+}
+/*==============================
+	Rating
+==============================*/
+.rating, .rating-film {
+    display: flex;
+    width: 90%;
+    font-size: 8vw;
+    padding: 25px 0;
+    line-height: 0.75;
+    align-items: center;
+    justify-content: center;
+}
+.rating__body {
+    position: relative;
+}
+.rating__body::before {
+    content: "★★★★★★★★★★" ;
+    display: block;
+}
+.rating__active, .rating__active-film {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.rating__active::before, .rating__active-film::before {
+    content: "★★★★★★★★★★" ; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #2bbdee;
+}
+.rating__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.rating__item {
+    flex: 0 0 10%;
+    height: 100%;
+    opacity: 0;
+}
+.rating__value, .rating__value-film {
+    font-size: 50%;
+    line-height: 1;
+    padding: 0px 0px 0px 10px;
+    width: 2.5%;
+}
